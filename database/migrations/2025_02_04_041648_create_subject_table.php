@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('time');
             $table->integer('seats');
             $table->string('roomID');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

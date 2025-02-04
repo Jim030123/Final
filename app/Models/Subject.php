@@ -11,9 +11,9 @@ class Subject extends Model
 
     protected $fillable=['name','days','time','seats','roomID'];
 
-    public function Classroom(){
-        return $this->belongTo('App\Models\Classroom');
-    }
+    // public function Classroom(){
+    //     return $this->belongTo('App\Models\Classroom');
+    // }
 
 
 }

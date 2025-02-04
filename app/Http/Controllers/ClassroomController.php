@@ -17,7 +17,7 @@ class ClassroomController extends Controller
         ]);
 
 
-    // return view('addClassroom');
+     //return view('addClassroom');
     return redirect('addClassroom')->with('success', "Admin successfully created");
     }
 
@@ -45,8 +45,8 @@ class ClassroomController extends Controller
     }
 
     public function delete($id){
-        $product=Classroom::find($id);
-        $product->delete();//delete from products where id='$id'
+        $classroom=Classroom::find($id);
+        $classroom->delete();//delete from products where id='$id'
         return redirect()->route('showClassroom');
     }
 
