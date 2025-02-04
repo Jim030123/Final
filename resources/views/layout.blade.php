@@ -6,6 +6,14 @@
     <title>@yield('title')</title>
 </head>
 <body>
+    <form action="{{ route('search') }}" method="GET" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="keyword" class="form-control" placeholder="Search classroom name" value="{{ $keyword ?? '' }}">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>&nbsp;
+
+
 
     <nav>
     <ul>
